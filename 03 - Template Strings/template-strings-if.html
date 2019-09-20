@@ -21,7 +21,18 @@
     </div>
   `;
 
-  document.body.innerHTML = markup;
+  //document.body.innerHTML = markup;
+
+  const myMarkup = `
+  <div class="song">
+  <p>
+    ${song.name} - ${song.artist}
+    ${song.featuring ? `(Featuring ${song.featuring})` : ''}
+  </p>
+  </div>
+  `;
+
+    document.body.innerHTML = myMarkup;
 
 </script>
 </body>
