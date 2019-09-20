@@ -21,6 +21,25 @@
 
   const cuts = ['Chuck', 'Brisket', 'Shank', 'Short Rib'];
 
+  for (const [i, cut] of cuts.entries()) {
+    //console.log(`${cut} is the ${i + 1} item`);
+    
+  }
+
+  function addNumbers() {
+   
+    let total = 0
+
+    for (const key in arguments) {
+      if (arguments.hasOwnProperty(key)) {
+        total += arguments[key];
+      }
+    }
+    console.log(total);
+  }
+
+  addNumbers(10, 20 ,30, 40 , 50);
+
   cuts.shop = 'MM MEats';
 
   // for (let i = 0; i < cuts.length; i++) {
@@ -42,7 +61,7 @@
     if(cut === 'Brisket') {
       continue;
     }
-    console.log(cut);
+    //console.log(cut);
   }
 
 </script>
